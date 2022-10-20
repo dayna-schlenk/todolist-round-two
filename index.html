@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do Round 2</title>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +18,21 @@
     <script src="app.js" async></script>
 </head>
 <body>
-    <h1>ToDo List</h1>
-    <p>Testing testing</p>
-    <i class="fa-solid fa-mug-saucer"></i>
+    <header>
+        <h1>ToDo List</h1>
+    </header>
+    
+    <!-- add todo -->
+    <form>
+        <input type="text" class="todo-input">
+        <button class="todo-button" type="submit">
+            <i class="fa-regular fa-square"></i>
+        </button>
+    </form>
+
+    <!-- view todos -->
+    <div class="todo-container">
+        <ul class="todo-list"></ul>
+    </div>
 </body>
 </html>
