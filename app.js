@@ -1,1 +1,5 @@
-console.log("Hello todo list!");
+// selectors
+
+// event listeners
+
+// functions
