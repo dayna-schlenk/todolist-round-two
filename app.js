@@ -4,5 +4,10 @@ const todoButton = document.querySelector('.todo-button');
 const todoList = document.querySelector('.todo-list');
 
 // event listeners
+todoButton.addEventListener('click', addTodo);
 
 // functions
+function addTodo(event) {
+    event.preventDefault();
+    console.log("helloooo");
+}
