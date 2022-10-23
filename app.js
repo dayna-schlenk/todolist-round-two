@@ -15,14 +15,24 @@ function addTodo(event) {
     const todoDiv = document.createElement('div');
     todoDiv.classList.add('todo');
 
-    // create li
+    // create li & append to div
     const newTodo = document.createElement('li');
     newTodo.innerText = 'Hey?';
     newTodo.classList.add('todo-item');
-
-    // append li to div
     todoDiv.appendChild(newTodo);
 
-    // create button to delete
-    // create button to mark done
+    // create completed button & append to div
+    const completedButton = document.createElement('button');
+    completedButton.innerHTML = '<i class="fa-solid fa-check"></i>';
+    completedButton.classList.add('completed-btn');
+    todoDiv.appendChild(completedButton);
+
+    // create delete button & append to div
+    const deleteButton = document.createElement('button');
+    deleteButton.innerHTML = '<i class="fa-solid fa-trash-can"></i>';
+    deleteButton.classList.add('delete-btn');
+    todoDiv.appendChild(deleteButton);
+
+    // append all this to the ul
+    todoList.appendChild(todoDiv);
 }
