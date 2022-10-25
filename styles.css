@@ -61,11 +61,11 @@ form button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 0.5rem;
 }
 
 .todo-item {
     flex: 1;
+    padding: 0 0.5rem;
 }
 
 .completed-btn, .delete-btn {
