@@ -80,3 +80,7 @@ form button:hover {
 .completed-btn {
     background:#5CB85C;
 }
+
+.fa-trash-can, .fa-check {
+    pointer-events: none;
+}

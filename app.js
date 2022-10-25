@@ -5,11 +5,12 @@ const todoList = document.querySelector('.todo-list');
 
 // event listeners
 todoButton.addEventListener('click', addTodo);
+todoList.addEventListener('click', deleteAndCheck);
 
 // functions
-function addTodo(event) {
+function addTodo(evt) {
     // prevent form from submitting
-    event.preventDefault();
+    evt.preventDefault();
 
     // create div
     const todoDiv = document.createElement('div');
@@ -38,4 +39,14 @@ function addTodo(event) {
 
     // clear todo input value
     todoInput.value = "";
+}
+
+function deleteAndCheck(evt) {
+    const item = evt.target;
+
+    // delete todo
+    if (item.classList[0] === 'delete-btn') {
+        // remove todo div
+        item.remove();
+    }
 }
