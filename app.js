@@ -47,6 +47,7 @@ function deleteAndCheck(evt) {
     // delete todo
     if (item.classList[0] === 'delete-btn') {
         // remove todo div
-        item.remove();
+        const todo = item.parentElement;
+        todo.remove();
     }
 }
