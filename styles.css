@@ -105,6 +105,7 @@ select {
     color: rgb(114, 171, 236);
     width: 10rem;
     cursor: pointer;
+    padding: 1rem;
 }
 
 .select {
