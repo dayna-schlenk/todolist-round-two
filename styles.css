@@ -95,38 +95,3 @@ form button:hover {
     transform: translateY(8rem) rotateZ(20deg);
     opacity: 0;
 }
-
-select {
-    /* remove all styles to start */
-    appearance: none;
-    outline: none;
-    border: none;
-    /* apply new styles */
-    color: rgb(114, 171, 236);
-    width: 10rem;
-    cursor: pointer;
-    padding: 1rem;
-}
-
-.select {
-    margin: 1rem;
-    position: relative;
-    overflow: hidden;
-}
-
-.select::after {
-    /* add dropdown arrow */
-    content: "\25BC";
-    position: absolute;
-    background: rgb(114, 171, 236);
-    top: 0;
-    right: 0;
-    padding: 1rem;
-    pointer-events: none;
-    transition: all 0.3s ease;
-}
-
-.select:hover::after {
-    background-color: white;
-    color:rgb(114, 171, 236);
-}
